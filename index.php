@@ -106,9 +106,8 @@
               <p class="sub-judul-desc">Digital Art</p>
             </div>
           </div>
-          <img src="http://127.0.0.1:5501/image/karya/gusti.webp" alt="Tuhan Yesus" title="Tuhan Yesus" width="1px"
-            height="1px" class="w-full h-auto shadow-black shadow-md max-w-[300px] sm:w-1/2 sm:max-w-md"
-            id="image-desc">
+          <img src="/image/karya/gusti.webp" alt="Tuhan Yesus" title="Tuhan Yesus" width="1px" height="1px"
+            class="w-full h-auto shadow-black shadow-md max-w-[300px] sm:w-1/2 sm:max-w-md" id="image-desc">
           <div class="w-full sm:w-1/2 sm:ml-4">
             <div class="hidden sm:block md:mb-5 lg:mb-9">
               <h2 class="judul-desc">Tuhan Yesus</h2>
@@ -204,11 +203,11 @@
       <?php
 
       // koneksi testing 
-      // $koneksi = mysqli_connect("localhost", "root", "1234", "haresdesign");
-      
-      // koneksi untuk hosting
-      $koneksi = mysqli_connect("sql204.infinityfree.com", "if0_38004492", "otvEZJMs8IODrXE", "if0_38004492_pesan_db");
+      $koneksi = mysqli_connect("localhost", "root", "1234", "haresdesign");
 
+      // koneksi untuk hosting
+      // $koneksi = mysqli_connect("sql204.infinityfree.com", "if0_38004492", "otvEZJMs8IODrXE", "if0_38004492_pesan_db");
+      
       if (isset($_POST['submit'])) {
         mysqli_query($koneksi, "INSERT INTO tabel_pesan set									
               Nama = '$_POST[nama]',							
