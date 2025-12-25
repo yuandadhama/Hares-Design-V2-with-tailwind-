@@ -202,7 +202,12 @@
           name="submit">KIRIM</button>
       </form>
       <?php
-      $koneksi = mysqli_connect("localhost", "root", "1234", "haresdesign");
+
+      // koneksi testing 
+      // $koneksi = mysqli_connect("localhost", "root", "1234", "haresdesign");
+      
+      // koneksi untuk hosting
+      $koneksi = mysqli_connect("sql204.infinityfree.com", "if0_38004492", "otvEZJMs8IODrXE", "if0_38004492_pesan_db");
 
       if (isset($_POST['submit'])) {
         mysqli_query($koneksi, "INSERT INTO tabel_pesan set									
